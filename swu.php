@@ -21,7 +21,7 @@
 
     mail($to,$email_subject,$email_body,$headers);
 
-    header("Location: swopnil.html");
+    header("Location: index.html");
 
 
     ?>
