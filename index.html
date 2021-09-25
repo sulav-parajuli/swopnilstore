@@ -18,30 +18,8 @@ html,body,h1,h2,h3,h4 {font-family:"Times New Roman", serif}
     font-style: normal;
   }
 </style>
-    <style>
-#popup {
-            display:none;
-            position:absolute;
-            margin:0 auto;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 9999;
-    }
-</style>
 </head>
 <body>
-   /* <div id="popup">
-
-    <!-- and here comes the image -->
-    <img src="happydashain.jpg" alt="popup">
-
-        <!-- Now this is the button which closes the popup-->
-        <button id="close">Close button</button>
-
-        <!-- and finally we close the POPUP FRAME-->
-        <!-- everything on it will show up within the popup so you can add more things not just an image -->
-</div>*/
 
 <!-- Sidebar/menu -->
   <nav class="w3-sidebar w3-black w3-animate-right" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
@@ -309,23 +287,6 @@ function showDivs(n) {
   x[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " w3-white";
 }
-
 </script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script>
-	$(document).ready(function () {
-
-    //select the POPUP FRAME and show it
-    $("#popup").hide().fadeIn(1000);
-
-    //close the POPUP if the button with id="close" is clicked
-    $("#close").on("click", function (e) {
-        e.preventDefault();
-        $("#popup").fadeOut(1000);
-    });
-
-});
-</script>
-
 </body>
 </html>
