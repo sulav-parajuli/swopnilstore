@@ -257,3 +257,11 @@ h1 {
 .btn-grp button:hover {
     background-color: skyblue;
 }
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0000FF;
+}
