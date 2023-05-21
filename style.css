@@ -45,6 +45,10 @@ img {
     background-color: #717171;
 }
 
+ #emailid {
+        padding-left: 200px;
+    }
+
 
 /* Fading animation */
 
@@ -72,9 +76,6 @@ img {
         opacity: 1
     }
 }
-    #emailid {
-        padding-left: 200px;
-    }
 
 @media screen and (max-width: 625px) {
     #emailid {
