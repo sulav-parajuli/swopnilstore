@@ -74,8 +74,10 @@ img {
 }
 
 
-#emailid {
-    padding-left: 150px;
+@media screen and (min-width: 630px) {
+    #emailid {
+        padding-left: 150px;
+    }
 }
 
 @media screen and (max-width: 625px) {
