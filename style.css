@@ -74,9 +74,15 @@ img {
 }
 
 
-/* On smaller screens, decrease text size */
+#emailid {
+    padding-left: 150px;
+}
 
-@media only screen and (max-width: 300px) {}
+@media screen and (max-width: 625px) {
+    #emailid {
+        padding-left: 0px;
+    }
+}
 
 .w3-panel {
     text-align: center;
