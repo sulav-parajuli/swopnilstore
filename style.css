@@ -72,13 +72,9 @@ img {
         opacity: 1
     }
 }
-
-
-@media screen and (min-width: 630px) {
     #emailid {
-        padding-left: 250px;
+        padding-left: 200px;
     }
-}
 
 @media screen and (max-width: 625px) {
     #emailid {
