@@ -1065,9 +1065,9 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Chefs Section
+# Teams Section
 --------------------------------------------------------------*/
-.chefs .chef-member {
+.teams .team-member {
   overflow: hidden;
   text-align: center;
   border-radius: 5px;
@@ -1076,12 +1076,12 @@ section {
   transition: 0.3s;
 }
 
-.chefs .chef-member .member-img {
+.teams .team-member .member-img {
   position: relative;
   overflow: hidden;
 }
 
-.chefs .chef-member .member-img:after {
+.teams .team-member .member-img:after {
   position: absolute;
   content: "";
   left: 0;
@@ -1093,7 +1093,7 @@ section {
   z-index: 1;
 }
 
-.chefs .chef-member .social {
+.teams .team-member .social {
   position: absolute;
   right: -100%;
   top: 30px;
@@ -1104,7 +1104,7 @@ section {
   z-index: 2;
 }
 
-.chefs .chef-member .social a {
+.teams .team-member .social a {
   transition: color 0.3s;
   color: rgba(55, 55, 63, 0.4);
   margin: 15px 12px;
@@ -1113,33 +1113,33 @@ section {
   text-align: center;
 }
 
-.chefs .chef-member .social a:hover {
+.teams .team-member .social a:hover {
   color: rgba(55, 55, 63, 0.9);
 }
 
-.chefs .chef-member .social i {
+.teams .team-member .social i {
   font-size: 18px;
 }
 
-.chefs .chef-member .member-info {
+.teams .team-member .member-info {
   padding: 10px 15px 20px 15px;
 }
 
-.chefs .chef-member .member-info h4 {
+.teams .team-member .member-info h4 {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 20px;
   color: var(--color-secondary);
 }
 
-.chefs .chef-member .member-info span {
+.teams .team-member .member-info span {
   display: block;
   font-size: 14px;
   font-weight: 400;
   color: rgba(33, 37, 41, 0.4);
 }
 
-.chefs .chef-member .member-info p {
+.teams .team-member .member-info p {
   font-style: italic;
   font-size: 14px;
   padding-top: 15px;
@@ -1147,12 +1147,12 @@ section {
   color: rgba(33, 37, 41, 0.7);
 }
 
-.chefs .chef-member:hover {
+.teams .team-member:hover {
   transform: scale(1.08);
   box-shadow: 0px 0 30px rgba(55, 55, 63, 0.15);
 }
 
-.chefs .chef-member:hover .social {
+.teams .team-member:hover .social {
   right: 8px;
   opacity: 1;
 }
@@ -1285,38 +1285,38 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Gallery Section
+# Posts Section
 --------------------------------------------------------------*/
-.gallery {
+.posts {
   overflow: hidden;
 }
 
-.gallery .swiper-pagination {
+.posts .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
 
-.gallery .swiper-pagination .swiper-pagination-bullet {
+.posts .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #d1d1d7;
   opacity: 1;
 }
 
-.gallery .swiper-pagination .swiper-pagination-bullet-active {
+.posts .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--color-primary);
 }
 
-.gallery .swiper-slide-active {
+.posts .swiper-slide-active {
   text-align: center;
 }
 
 @media (min-width: 992px) {
-  .gallery .swiper-wrapper {
+  .posts .swiper-wrapper {
     padding: 40px 0;
   }
 
-  .gallery .swiper-slide-active {
+  .posts .swiper-slide-active {
     border: 6px solid var(--color-primary);
     padding: 4px;
     background: #fff;
