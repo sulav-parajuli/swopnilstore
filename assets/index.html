@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Swopnil Store</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="logo.png">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Times New Roman">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-black w3-animate-right" style="z-index:3;width:250px;font-weight:bold;display:none;right:0;" id="mySidebar">
+        <a href="javascript:void()" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-32">CLOSE</a>
+        <a href="#Home" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">HOME</a>
+        <a href="Posts.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">POSTS</a>
+        <a href="#About" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">ABOUT US</a>
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">CONTACT</a>
+        <a href="ScanPay.html" onclick="w3_close()" class="w3-bar-item w3-button w3-center w3-padding-16">SERVICES</a>
+    </nav>
+
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+    <!-- Links (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-row w3-large w3-light-grey ">
+            <div class="w3-col s3">
+                <a href="#Home" class="w3-button w3-block">Home</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="Posts.html" class="w3-button w3-block w3-main-content-block">Posts</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#contact" class="w3-button w3-block">Contact</a>
+            </div>
+            <!-- Top menu on small screens -->
+            <div class="w3-col s3 w3-top-right ">
+                <a href="javascript:void(0)" class=" w3-button w3-block" onclick="w3_open()">☰</a>
+            </div>
+        </div>
+    </div>
+    <!-- Content -->
+    <div class="w3-content" style="max-width:1100px;margin-top:80px;margin-bottom:80px" id="Home">
+        <div class=" w3-panel  w3-section">
+            <h1 class=" w3-circle w3-left "><img src=logo.png style="height:150px;width:200px" alt="logo"></h1>
+            <h1 style="color:Blue ;class=w3-middle-left ; font-family:Times New Roman; serif;font-size: 60px">
+                <B>Swopnil Store</B>
+            </h1>
+            <h3 style="text-align:center ;class = w3-padding">Grocery store of pokhara</h3>
+            <h2><a href="https://www.facebook.com/swopnilstore"><i style="color: Blue" class="fa fa-facebook-official w3-right w3-hover-opacity"></i></a></h2>
+            <h2><a href="https://www.instagram.com/swopnil_store/"><i style="color:Red" class="fa fa-instagram  w3-right w3-hover-opacity"></i></a></h2>
+            <h2><a href="https://wa.link/6il70s"><i style="color:Green" class="fa fa-whatsapp  w3-right w3-hover-opacity"></i></a></h2>
+            <h2><a href="https://www.facebook.com/messages/t/2085160631740147"><i class="fab fa-facebook-messenger w3-right w3-hover-opacity"></i></a></h2>
+            <h6>Contact=061-543093</h6>
+            <h6 id="emailid" style="text-align:center;">Email= <a href="mailto:Swopnil.store@outlook.com">swopnil.store@outlook.com</a></h6>
+        </div>
+        <hr>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="Swu.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="6.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="frozen.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="transaction.jpg" style="width:100%">
+            </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+
+
+
+        <!-- Grid -->
+        <div class="w3-row container">
+            <div class="w3-center w3-padding-64">
+                <span class="w3-xlarge w3-bottombar w3-border-w3-dark-grey w3-padding-16">What We Offer</span>
+            </div>
+            <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16">
+                <h3>Healthy groceries Food</h3>
+                <p>We provide healthiest food for the customers and make them healthy by offering them well-being good health.We choose the best and long-term unexpired foods from the various places of nepal.
+                </p>
+            </div>
+
+            <div class="w3-col l3 m6 w3-grey w3-container w3-padding-16">
+                <h3>Branding</h3>
+                <p>We sold branded and most necessity grocery goods in a cheap and easy rate.</p>
+            </div>
+
+            <div class="w3-col l3 m6 w3-dark-grey w3-container w3-padding-16">
+                <h3>Delivery services</h3>
+                <p>We offers delivery services in any location within the pokhara valley of nepal.</p>
+            </div>
+
+            <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
+                <h3>Promises</h3>
+                <p>We promise our valueable customers that we won't make them sad.We also promise that we never provides them bad and unhealthy fooding and services.</p>
+            </div>
+        </div>
+
+
+        <div class="w3-row-padding" id="About">
+            <div class="w3-center w3-padding-64">
+                <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">About Us</span>
+            </div>
+            <h1 style="background-color:DodgerBlue;"><b>WELCOME</b></h1>
+            <p><img src=swopnilstore.jpg class="w3-left" style="width:100%" /><i>At the begining,We wants you all to warm welcome to "Swopnil Store".We're glad, you're here to get our support!
+      We promise to fulfill your needs.Keep updated with us.
+    </i></p>
+            <p>"Swopnil Store" was established in 2007 AD by "Mr.Yadav Prasad Parajuli"."Swopnil Store" was established to serve all the people with their happy life style with all the basic necessities needed for their life. It is a small grocery store
+                in pokhara,nepal with sufficient fooding and sufficient grocery goods that can fulfill customers needs.Hope,we could fulfill yours needs too.
+            </p>
+            <button class="w3-button w3-light-grey w3-block"><a href="About.html">Learn More</a></button>
+        </div>
+        <!-- Contact -->
+        <div class="w3-row-padding" id="contact">
+            <div class="w3-center w3-padding-64">
+                <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Contact Us</span>
+            </div>
+            <iframe width="100%" height="480px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAASpYAYdUOTlQV0w4MVY5TzM3R083MTQ1STVEOU9GSS4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh"
+                allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3515.530641267546!2d83.9770606150734!3d28.22156938258159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39959456ec60b459%3A0xba6b352ce067731c!2sSwopnil%20Store!5e0!3m2!1sen!2snp!4v1628345436542!5m2!1sen!2snp"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        
+        <!-- Footer -->
+        <footer class="w3-container w3-opacity w3-padding-32 w3-blue w3-hover-opacity-off w3-center ">
+            <div class="w3-row-padding">
+                <div class="w3-third">
+                    <h3>Quicks links</h3>
+                    <p><a href="QR.jpg">Scan and Pay.</a></p>
+                    <p><a href="ScanPay.html">CashIn Services</a></p>
+                    <p><a href="policies.html">Our Policies</a></p>
+                    <p><a href="https://www.google.com.np/maps/place/Swopnil+Store/@28.2216428,83.9770708,17z/data=!3m1!4b1!4m5!3m4!1s0x39959456ec60b459:0xba6b352ce067731c!8m2!3d28.2216381!4d83.9792595?hl=en&authuser=0">Locate us.</a></p>
+                    <p><a href="Posts.html">Popular Posts</a></p>
+                    <p><a href="ScanPay.html">Our Services</a></p>
+                    <p><a href="https://swopnilstore.business.site/?utm_source=gmb&utm_medium=referral">Google Site</a></p>
+                    <p><a href="https://www.facebook.com/messages/t/2085160631740147">Message Us</a></p>
+                    <h3>Contact</h3>
+                    <p>POKHARA,PARSYANG,RADHAKRISHNA MARGA</p>
+                    <p><a href="mailto:Swopnil.store@outlook.com?subject=Feedback&body=Message">Swopnil.store@outlook.com</a></p>
+                </div>
+
+                <div class="w3-third">
+                    <h3>Blog Posts</h3>
+                    <ul class="w3-ul w3-hoverable">
+                        <li class="w3-padding-16">
+                            <button class="w3-button w3-block"><a href="Posts.html">
+          <video width="100" height="60" controls>
+  <source src="Untitled-1.mp4" type="video/mp4"
+class="w3-left w3-margin-right" style="width:80px">Your browser does not support the video tag.</video> 
+          <span class="w3-large">Cash on Delivery</span><br>
+          <span>Delivery Service</span></a></button>
+                        </li>
+                        <li class="w3-padding-16">
+                            <button class="w3-button w3-block"><a href="Posts.html">
+         <video width="100" height="60" controls>
+  <source src="feed.mp4" type="video/mp4"
+class="w3-left w3-margin-right" style="width:80px">Your browser does not support the video tag.</video> 
+          <span class="w3-large">Feed</span><br>
+          <span>Cattle and Poultry feed</span></a></button>
+                        </li>
+                        <li class="w3-padding-16">
+                            <button class="w3-button  w3-block"><a href="Posts.html">
+          <img src="Untitled-5.gif" alt="Transaction" style="width:80px" 
+class="w3-left w3-margin-right" ></img> 
+          <span class="w3-large">Transaction</span><br>
+          <span>Transaction Services</span></a></button>
+                        </li>
+                        <button class="w3-button w3-light-grey w3-block"><a href="Posts.html">See All>></a></button>
+                    </ul>
+                </div>
+
+                <div class=" w3-third w3-opacity w3-padding-64 w3-blue w3-center w3-hover-opacity-off">
+                    <a href="index.html" class="w3-button w3-hover-white margin"><i class="fa fa-arrow-up margin-right"></i>To the top</a>
+                    <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fswopnilstore%2F&tabs=timeline&width=325&height=100&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="325" height="180"
+                        style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    <h2><a href="https://www.facebook.com/swopnilstore"><i style="color:Blue" class="fa fa-facebook-official w3-right w3-hover-opacity"></i></a></h2>
+                    <h2><a href="https://www.instagram.com/swopnil_store/"><i style="color:red" class="fa fa-instagram  w3-right w3-hover-opacity"></i></a></h2>
+                    <h2><a href="https://wa.link/6il70s"><i style="color:Green" class="fa fa-whatsapp  w3-right w3-hover-opacity"></i></a></h2>
+                    <h2><a href="#"><i style="color:blue" class='fab fa-facebook-messenger w3-right w3-hover-opacity'></i></a></h2>
+                    <h6 class="w3-right">STAY IN TOUCH</h6>
+                </div>
+            </div>
+            <p>© Copyrights 2021 Swopnil Store. All rights reserved
+            </p>
+        </footer>
+
+        <!-- Messenger Chat plugin Code -->
+        <div id="fb-root"></div>
+
+        <!-- Your Chat plugin code -->
+        <div id="fb-customer-chat" class="fb-customerchat">
+        </div>
+
+        <script>
+            var chatbox = document.getElementById('fb-customer-chat');
+            chatbox.setAttribute("page_id", "2085160631740147");
+            chatbox.setAttribute("attribution", "biz_inbox");
+
+            window.fbAsyncInit = function() {
+                FB.init({
+                    xfbml: true,
+                    version: 'v12.0'
+                });
+            };
+
+            (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+        <script>
+            // Script to open and close sidebar
+            function w3_open() {
+                document.getElementById("mySidebar").style.display = "block";
+                document.getElementById("myOverlay").style.display = "block";
+            }
+
+            function w3_close() {
+                document.getElementById("mySidebar").style.display = "none";
+                document.getElementById("myOverlay").style.display = "none";
+            }
+
+            // Slideshow
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+        </script>
+</body>
+</div>
+</html>
