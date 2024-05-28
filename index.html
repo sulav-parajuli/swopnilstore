@@ -967,8 +967,7 @@
           </div>
 
           <form
-            action="forms/contact.php"
-            method="post"
+          onsubmit="handleFormSubmit(this); return false;"
             role="form"
             class="php-email-form p-3 p-md-4"
           >
@@ -1015,7 +1014,7 @@
             </div>
             <div class="my-3">
               <div class="loading">Loading</div>
-              <div class="error-message"></div>
+              <!-- <div class="error-message"></div> -->
               <div class="sent-message">
                 Your message has been sent. Thank you!
               </div>
@@ -1123,6 +1122,18 @@
             fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
     </script>
+
+<script>
+  function handleFormSubmit(form) {
+      const name = encodeURIComponent(form.name.value);
+      const email = encodeURIComponent(form.email.value);
+      const message = encodeURIComponent(form.message.value);
+      const subject = encodeURIComponent(form.subject.value);
+      const body = `Name: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+      const mailtoLink = `mailto:mail@swopnilstore.com.np?subject=${subject}&body=${body}`;
+      window.location.href = mailtoLink;
+  }
+</script>
 
     <a
       href="#"
