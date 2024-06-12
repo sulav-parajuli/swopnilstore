@@ -991,8 +991,8 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Events Section
---------------------------------------------------------------*/
+        # Events Section
+        --------------------------------------------------------------*/
 .events .container-fluid {
   padding: 0;
 }
@@ -1065,8 +1065,39 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Teams Section
+# Reviews Section
 --------------------------------------------------------------*/
+.reviews {
+  background: #ffffff;
+}
+
+.reviews .section-header {
+  text-align: justify;
+}
+
+.review-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.review-content {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+.reviews .btn {
+  margin: 5px;
+}
+@media (max-width: 768px) {
+  .review-content {
+    padding-top: 1rem;
+  }
+}
+
+/*--------------------------------------------------------------
+# Teams Section
+-------------------------------------------------------------*/
 .teams .team-member {
   overflow: hidden;
   text-align: center;
